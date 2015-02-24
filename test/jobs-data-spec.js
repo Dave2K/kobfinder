@@ -14,8 +14,8 @@ function resetJobs() {
 describe("get jobs", function() {
 
     var jobs;
-    //var urlDB = 'mongodb://kobfinder:kobfinder@ds039251.mongolab.com:39251/kobfinder';
-    var urlDB = 'mongodb://localhost/kobfinder';
+    var urlDB = 'mongodb://kobfinder:kobfinder@ds039251.mongolab.com:39251/kobfinder';
+    //var urlDB = 'mongodb://localhost/kobfinder';
 
     before(function(done) {
         jobsData.connectDB(urlDB)
