@@ -20,6 +20,8 @@ app.get('*', function(req, res) {
     res.render('index');
 });
 
+//var urlDB = 'mongodb://kobfinder:kobfinder@ds039251.mongolab.com:39251/kobfinder';
+var urlDB = 'mongodb://localhost/kobfinder';
 jobsData.connectDB(urlDB)
     .then(function() {
         console.log('connected to mongodb successfully!');
